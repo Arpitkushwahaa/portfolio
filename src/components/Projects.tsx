@@ -1,67 +1,97 @@
 import React from 'react';
-import { ExternalLink, Github, Code, Smartphone, Globe, Database } from 'lucide-react';
+import { ExternalLink, Github, Code, Smartphone, Globe, Database, Video, Activity, Briefcase, ShoppingBag, Brain, Link, CalendarClock, Pizza, VideoIcon } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with user authentication, payment integration, and admin dashboard. Built with modern web technologies for optimal performance.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa",
-      liveUrl: "#",
-      icon: <Globe className="w-6 h-6" />,
+      title: "Doctors Appointment App",
+      description: "A full-stack doctor appointment platform with Vonage-based video calls, enabling users to schedule, manage, and attend appointments. Features responsive UI, role-based authentication, and real-time alerts.",
+      technologies: ["React 19", "Next.js 15", "Tailwind CSS", "NeonDB", "Prisma", "Clerk", "Vonage", "Shadcn UI"],
+      image: "https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/doctors-appointment",
+      liveUrl: "https://doctors-appointment-demo.vercel.app",
+      icon: <Video className="w-6 h-6" />,
       category: "Full Stack"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and advanced project tracking capabilities.",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io", "Prisma"],
-      image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa",
-      liveUrl: "#",
-      icon: <Code className="w-6 h-6" />,
+      title: "AI Finance Platform",
+      description: "An AI-driven finance dashboard to track spending, visualize data, and generate insights. Features Supabase backend, Clerk authentication, background jobs with Inngest, and enhanced security with Arcjet.",
+      technologies: ["React 19", "Next.js 15", "Tailwind CSS", "Supabase", "Prisma", "Clerk", "Inngest", "Arcjet", "Shadcn UI"],
+      image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/ai-finance-platform",
+      liveUrl: "https://ai-finance-platform-demo.vercel.app",
+      icon: <Activity className="w-6 h-6" />,
+      category: "AI Platform"
+    },
+    {
+      title: "Full-Stack Job Portal",
+      description: "A hiring platform with job posting, applicant tracking, and role-based dashboards. Features real-time job applications, resume uploads, and application status tracking with secure authentication.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "Tailwind CSS", "Multer", "Shadcn UI"],
+      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/job-portal",
+      liveUrl: "https://job-portal-demo.vercel.app",
+      icon: <Briefcase className="w-6 h-6" />,
       category: "Web App"
     },
     {
-      title: "Social Media Dashboard",
-      description: "An analytics dashboard for social media management with data visualization, scheduling tools, and performance tracking across multiple platforms.",
-      technologies: ["Vue.js", "Python", "FastAPI", "Chart.js", "Redis"],
-      image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa",
-      liveUrl: "#",
-      icon: <Database className="w-6 h-6" />,
-      category: "Analytics"
+      title: "E-Commerce Web Application",
+      description: "A full-featured e-commerce platform with user and admin views, featuring authentication, product management, and complete order flow. Includes admin dashboard, shopping experience, and Stripe payments.",
+      technologies: ["Next.js", "Tailwind CSS", "Prisma", "Clerk", "Stripe", "Shadcn UI"],
+      image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/ecommerce-app",
+      liveUrl: "https://ecommerce-demo.vercel.app",
+      icon: <ShoppingBag className="w-6 h-6" />,
+      category: "E-Commerce"
     },
     {
-      title: "Mobile Weather App",
-      description: "A cross-platform mobile application providing detailed weather forecasts, location-based services, and customizable weather alerts.",
-      technologies: ["React Native", "Expo", "OpenWeather API", "AsyncStorage"],
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa",
-      liveUrl: "#",
-      icon: <Smartphone className="w-6 h-6" />,
-      category: "Mobile"
+      title: "AI Career Coach Platform",
+      description: "An AI-powered career platform with mock interviews, resume builder, and industry insights. Features Gemini AI APIs, custom onboarding, and automated weekly insights for tracking career progress.",
+      technologies: ["Next.js", "Shadcn UI", "Clerk", "Prisma", "Inngest", "Gemini API"],
+      image: "https://images.pexels.com/photos/8867431/pexels-photo-8867431.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/ai-career-coach",
+      liveUrl: "https://ai-career-coach-demo.vercel.app",
+      icon: <Brain className="w-6 h-6" />,
+      category: "AI Platform"
     },
     {
-      title: "Real-time Chat Application",
-      description: "A modern chat application with real-time messaging, file sharing, group chats, and end-to-end encryption for secure communication.",
-      technologies: ["React", "Socket.io", "Node.js", "MongoDB", "JWT"],
-      image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa",
-      liveUrl: "#",
-      icon: <Globe className="w-6 h-6" />,
+      title: "URL Shortener Web App",
+      description: "A full-stack URL shortener platform allowing users to create, manage, and share shortened links. Features user authentication, link analytics, and custom short URLs with validation and error handling.",
+      technologies: ["React", "Next.js", "MongoDB", "Express.js", "Tailwind CSS"],
+      image: "https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/url-shortener",
+      liveUrl: "https://url-shortener-demo.vercel.app",
+      icon: <Link className="w-6 h-6" />,
+      category: "Full Stack"
+    },
+    {
+      title: "Food Delivery Website",
+      description: "A production-ready restaurant platform with authentication, restaurant browsing, dynamic cart & checkout system with Stripe integration, and role-based dashboards for admins and users.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "TypeScript", "Stripe", "Zustand", "Zod"],
+      image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/food-delivery",
+      liveUrl: "https://food-delivery-demo.vercel.app",
+      icon: <Pizza className="w-6 h-6" />,
+      category: "Full Stack"
+    },
+    {
+      title: "Calendar Scheduling Platform",
+      description: "A Calendly-like scheduling platform with event management, time-slot configuration, third-party calendar integrations, and auto time zone detection. Built with a scalable architecture and responsive design.",
+      technologies: ["React", "Next.js", "Node.js", "TypeORM", "Supabase", "Tailwind CSS", "Shadcn UI", "Google Calendar API"],
+      image: "https://images.pexels.com/photos/1028741/pexels-photo-1028741.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/calendar-scheduling",
+      liveUrl: "https://calendar-scheduling-demo.vercel.app",
+      icon: <CalendarClock className="w-6 h-6" />,
+      category: "Web App"
+    },
+    {
+      title: "Video Conferencing App",
+      description: "A Zoom-like video conferencing platform with real-time video/audio calls, screen sharing, meeting recording, scheduled meetings, and dynamic meeting rooms with custom URLs.",
+      technologies: ["Next.js 15", "TypeScript", "Clerk", "TailwindCSS", "Shadcn UI", "Stream"],
+      image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800",
+      githubUrl: "https://github.com/Arpitkushwahaa/video-conferencing",
+      liveUrl: "https://video-conferencing-demo.vercel.app",
+      icon: <VideoIcon className="w-6 h-6" />,
       category: "Real-time"
-    },
-    {
-      title: "API Gateway Service",
-      description: "A microservices API gateway with authentication, rate limiting, request routing, and comprehensive monitoring and logging capabilities.",
-      technologies: ["Node.js", "Express", "Docker", "Redis", "PostgreSQL"],
-      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa",
-      liveUrl: "#",
-      icon: <Database className="w-6 h-6" />,
-      category: "Backend"
     }
   ];
 
@@ -112,7 +142,7 @@ const Projects: React.FC = () => {
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
+                  {project.technologies.slice(0, 5).map((tech, techIndex) => (
                     <span
                       key={techIndex}
                       className="bg-slate-700 text-gray-300 px-2 py-1 rounded text-xs"
@@ -120,6 +150,11 @@ const Projects: React.FC = () => {
                       {tech}
                     </span>
                   ))}
+                  {project.technologies.length > 5 && (
+                    <span className="bg-slate-700 text-gray-300 px-2 py-1 rounded text-xs">
+                      +{project.technologies.length - 5} more
+                    </span>
+                  )}
                 </div>
 
                 <div className="flex justify-between items-center">
@@ -129,6 +164,7 @@ const Projects: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-white transition-colors duration-200"
+                      title="View Source Code"
                     >
                       <Github className="w-5 h-5" />
                     </a>
@@ -137,13 +173,19 @@ const Projects: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-white transition-colors duration-200"
+                      title="View Live Demo"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
                   </div>
-                  <button className="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors duration-200">
-                    Learn More →
-                  </button>
+                  <a 
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-300 text-sm font-medium transition-colors duration-200"
+                  >
+                    View Demo →
+                  </a>
                 </div>
               </div>
             </div>
