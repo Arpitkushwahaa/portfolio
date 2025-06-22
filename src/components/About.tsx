@@ -89,13 +89,13 @@ const About: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6">
+        <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect">
             <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             Get to know me
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 text-shadow">
             About{' '}
             <span className="relative inline-block">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 animate-gradient">
@@ -110,16 +110,16 @@ const About: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* 3D Profile Section */}
-          <div className="relative">
+          <div className="relative animate-scale-in opacity-0" style={{ animationDelay: '0.3s' }}>
             {/* Main Profile Card */}
-            <div className="relative bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-500 shadow-2xl">
+            <div className="relative bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-500 shadow-2xl hover-lift glass-effect gradient-border">
               {/* Gradient Border Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-50"></div>
               
               <div className="relative z-10">
                 {/* 3D Avatar */}
                 <div className="relative mx-auto w-40 h-40 mb-8">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 p-1 animate-spin-slow">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 p-1 animate-spin-slow animate-glow">
                     <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                       <div className="relative">
                         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-600 to-purple-600 flex items-center justify-center shadow-2xl overflow-hidden">
@@ -129,7 +129,7 @@ const About: React.FC = () => {
                             className="w-full h-full object-cover brightness-110 contrast-110"
                           />
                         </div>
-                        <div className="absolute -bottom-2 -right-2 bg-green-500 p-2 rounded-full shadow-lg">
+                        <div className="absolute -bottom-2 -right-2 bg-gradient-to-br from-green-500 to-green-600 p-2 rounded-full shadow-lg">
                           <Code className="w-4 h-4 text-white" />
                         </div>
                       </div>
@@ -137,29 +137,29 @@ const About: React.FC = () => {
                   </div>
                   
                   {/* Floating Tech Icons */}
-                  <div className="absolute -top-4 -left-4 bg-blue-600 p-2 rounded-xl shadow-lg animate-float">
+                  <div className="absolute -top-4 -left-4 bg-gradient-to-br from-blue-600 to-blue-800 p-2 rounded-xl shadow-lg animate-float shadow-blue-600/30">
                     <Code className="w-4 h-4 text-white" />
                   </div>
-                  <div className="absolute -top-4 -right-4 bg-green-600 p-2 rounded-xl shadow-lg animate-float-delayed">
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-green-600 to-green-800 p-2 rounded-xl shadow-lg animate-float-delayed shadow-green-600/30">
                     <Server className="w-4 h-4 text-white" />
                   </div>
-                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-purple-600 p-2 rounded-xl shadow-lg animate-float-slow">
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-purple-600 to-purple-800 p-2 rounded-xl shadow-lg animate-float-slow shadow-purple-600/30">
                     <Database className="w-4 h-4 text-white" />
                   </div>
                 </div>
 
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-white mb-2">Arpit Kushwaha</h3>
-                  <p className="text-cyan-400 font-semibold mb-4">Aspiring Developer</p>
+                  <h3 className="text-2xl font-bold text-white mb-2 text-shadow">Arpit Kushwaha</h3>
+                  <p className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 font-semibold mb-4">Aspiring Developer</p>
                   
                   {/* Achievement Stats */}
                   <div className="grid grid-cols-2 gap-4">
                     {achievements.map((achievement, index) => (
-                      <div key={index} className="bg-slate-700/30 backdrop-blur-sm rounded-2xl p-4 border border-slate-600/30">
+                      <div key={index} className="bg-slate-700/30 backdrop-blur-sm rounded-2xl p-4 border border-slate-600/30 hover:border-cyan-500/30 transition-all duration-300 hover-lift glass-effect">
                         <div className="flex items-center justify-center mb-2 text-cyan-400">
                           {achievement.icon}
                         </div>
-                        <div className="text-2xl font-bold text-white mb-1">{achievement.number}</div>
+                        <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-1">{achievement.number}</div>
                         <div className="text-gray-400 text-sm">{achievement.label}</div>
                       </div>
                     ))}
@@ -174,9 +174,9 @@ const About: React.FC = () => {
           </div>
 
           {/* Content Section */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-up opacity-0" style={{ animationDelay: '0.5s' }}>
             <div>
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight text-shadow">
                 Aspiring Developer &{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
                   Eager Learner
@@ -207,13 +207,13 @@ const About: React.FC = () => {
             <div className="flex flex-wrap gap-4">
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-cyan-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25"
+                className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-cyan-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 animate-glow"
               >
                 Let's Connect
               </button>
               <button 
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-6 py-3 border-2 border-cyan-400/50 text-cyan-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 transform hover:scale-105 hover:border-cyan-400"
+                className="px-6 py-3 border-2 border-cyan-400/50 text-cyan-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 transform hover:scale-105 hover:border-cyan-400 glass-effect"
               >
                 View My Work
               </button>
@@ -226,13 +226,14 @@ const About: React.FC = () => {
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className={`group relative bg-slate-800/30 backdrop-blur-xl border ${highlight.borderColor} rounded-3xl p-6 hover:bg-slate-800/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl`}
+              className={`group relative bg-slate-800/30 backdrop-blur-xl border ${highlight.borderColor} rounded-3xl p-6 hover:bg-slate-800/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl card-hover glass-effect animate-scale-in opacity-0`}
+              style={{ animationDelay: `${0.7 + index * 0.2}s` }}
             >
               {/* Gradient Background Effect */}
               <div className={`absolute inset-0 bg-gradient-to-r ${highlight.color} rounded-3xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
               
               <div className="relative z-10">
-                <div className={`${highlight.bgColor} ${highlight.borderColor} border rounded-2xl p-4 w-24 h-24 mb-4 group-hover:scale-110 transition-transform duration-300 relative overflow-hidden flex items-center justify-center`}>
+                <div className={`${highlight.bgColor} ${highlight.borderColor} border rounded-2xl p-4 w-24 h-24 mb-4 group-hover:scale-110 transition-transform duration-300 relative overflow-hidden flex items-center justify-center animate-glow`}>
                   <div className={`text-transparent bg-clip-text bg-gradient-to-r ${highlight.color} relative z-10`}>
                     {highlight.icon}
                   </div>
@@ -243,7 +244,7 @@ const About: React.FC = () => {
                   />
                 </div>
                 
-                <h4 className="text-white font-bold text-xl mb-3 group-hover:text-cyan-300 transition-colors duration-300">
+                <h4 className="text-white font-bold text-xl mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-purple-400 transition-colors duration-300">
                   {highlight.title}
                 </h4>
                 

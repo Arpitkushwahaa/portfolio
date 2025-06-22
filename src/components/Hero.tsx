@@ -61,10 +61,10 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           {/* 3D Avatar/Logo */}
-          <div className="mb-16 relative mt-8">
+          <div className="mb-16 relative mt-8 animate-float">
             <div className="relative mx-auto w-48 h-48 mb-8">
               {/* Outer Ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-cyan-500 to-pink-500 p-1 animate-spin-slow">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-cyan-500 to-pink-500 p-1 animate-spin-slow animate-glow">
                 <div className="w-full h-full rounded-full bg-slate-950"></div>
               </div>
               
@@ -82,13 +82,13 @@ const Hero: React.FC = () => {
               </div>
               
               {/* Floating Icons */}
-              <div className="absolute -top-4 -left-4 bg-purple-600 p-3 rounded-2xl shadow-lg animate-float">
+              <div className="absolute -top-4 -left-4 bg-gradient-to-br from-purple-600 to-purple-800 p-3 rounded-2xl shadow-lg animate-float shadow-purple-600/30">
                 <Code className="w-6 h-6 text-white" />
               </div>
-              <div className="absolute -top-4 -right-4 bg-cyan-600 p-3 rounded-2xl shadow-lg animate-float-delayed">
+              <div className="absolute -top-4 -right-4 bg-gradient-to-br from-cyan-600 to-cyan-800 p-3 rounded-2xl shadow-lg animate-float-delayed shadow-cyan-600/30">
                 <Zap className="w-6 h-6 text-white" />
               </div>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-pink-600 p-3 rounded-2xl shadow-lg animate-float-slow">
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-br from-pink-600 to-pink-800 p-3 rounded-2xl shadow-lg animate-float-slow shadow-pink-600/30">
                 <Sparkles className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -97,13 +97,13 @@ const Hero: React.FC = () => {
           {/* Main Content */}
           <div className="space-y-8 pb-20">
             {/* Greeting */}
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium">
+            <div className="space-y-4 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium glass-effect">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 Available for new opportunities
               </div>
               
-              <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight">
+              <h1 className="text-6xl md:text-8xl font-bold text-white leading-tight text-shadow">
                 Hi, I'm{' '}
                 <span className="relative inline-block">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 animate-gradient">
@@ -115,14 +115,14 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Role */}
-            <div className="space-y-4">
+            <div className="space-y-4 animate-slide-up opacity-0" style={{ animationDelay: '0.4s' }}>
               <h2 className="text-3xl md:text-5xl font-bold text-gray-200">
                 Full Stack{' '}
                 <span className="relative">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
                     Developer
                   </span>
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full"></div>
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-shimmer"></div>
                 </span>
               </h2>
               
@@ -136,26 +136,26 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap justify-center gap-8 py-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">3+</div>
-                <div className="text-gray-400 text-sm">Years Experience</div>
+            <div className="flex flex-wrap justify-center gap-8 py-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
+              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift">
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1">1+</div>
+                <div className="text-gray-400 text-sm">Years Learning</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">50+</div>
-                <div className="text-gray-400 text-sm">Projects Completed</div>
+              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift">
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1">10+</div>
+                <div className="text-gray-400 text-sm">Projects Built</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">15+</div>
+              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift">
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1">10+</div>
                 <div className="text-gray-400 text-sm">Technologies</div>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
               <button
                 onClick={scrollToAbout}
-                className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
+                className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 animate-glow"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <span className="relative flex items-center gap-2">
@@ -168,7 +168,7 @@ const Hero: React.FC = () => {
                 href="https://github.com/Arpitkushwahaa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 border-2 border-purple-400/50 text-purple-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-purple-400/10 transition-all duration-300 transform hover:scale-105 hover:border-purple-400"
+                className="group relative px-8 py-4 border-2 border-purple-400/50 text-purple-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-purple-400/10 transition-all duration-300 transform hover:scale-105 hover:border-purple-400 glass-effect"
               >
                 <span className="flex items-center gap-2">
                   <Github className="w-5 h-5" />
@@ -178,13 +178,13 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Tech Stack Preview */}
-            <div className="pt-8 mb-12">
+            <div className="pt-8 mb-12 animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
               <p className="text-gray-500 text-sm mb-4">Built with modern technologies</p>
               <div className="flex flex-wrap justify-center gap-4">
                 {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Three.js'].map((tech, index) => (
                   <div
                     key={tech}
-                    className="px-4 py-2 bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-full text-gray-300 text-sm hover:border-purple-500/50 hover:text-purple-300 transition-all duration-300 cursor-default"
+                    className="px-4 py-2 bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-full text-gray-300 text-sm hover:border-purple-500/50 hover:text-purple-300 transition-all duration-300 cursor-default hover-lift"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     {tech}
@@ -198,7 +198,7 @@ const Hero: React.FC = () => {
           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
             <button
               onClick={scrollToAbout}
-              className="p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 text-purple-300 hover:text-white hover:bg-purple-600/20 transition-all duration-300"
+              className="p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 text-purple-300 hover:text-white hover:bg-purple-600/20 transition-all duration-300 glass-effect"
             >
               <ArrowDown className="w-6 h-6" />
             </button>

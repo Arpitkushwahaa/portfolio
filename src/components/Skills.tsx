@@ -1,92 +1,186 @@
 import React from 'react';
+import { Code, Database, Server, Layers, Cpu, Terminal, Palette, Zap, GitBranch } from 'lucide-react';
 
 const Skills: React.FC = () => {
   const skillCategories = [
     {
+      title: "Languages",
+      icon: <Code className="w-6 h-6" />,
+      skills: ["C", "C++", "Python", "JavaScript", "TypeScript", "HTML", "SQL"],
+      color: "from-blue-500 to-cyan-500",
+      bgColor: "bg-gradient-to-r from-blue-500/10 to-cyan-500/10",
+      borderColor: "border-blue-500/20"
+    },
+    {
       title: "Frontend",
-      skills: [
-        { name: "React", level: 90, color: "from-blue-500 to-cyan-500" },
-        { name: "TypeScript", level: 85, color: "from-blue-600 to-blue-400" },
-        { name: "Next.js", level: 80, color: "from-gray-700 to-gray-500" },
-        { name: "Tailwind CSS", level: 88, color: "from-teal-500 to-cyan-500" },
-        { name: "Three.js", level: 75, color: "from-purple-500 to-blue-500" }
-      ]
+      icon: <Palette className="w-6 h-6" />,
+      skills: ["React", "Next.js", "Redux Toolkit", "Tailwind CSS", "Three.js", "Material UI"],
+      color: "from-purple-500 to-pink-500",
+      bgColor: "bg-gradient-to-r from-purple-500/10 to-pink-500/10",
+      borderColor: "border-purple-500/20"
     },
     {
       title: "Backend",
-      skills: [
-        { name: "Node.js", level: 85, color: "from-green-600 to-green-400" },
-        { name: "Express.js", level: 82, color: "from-gray-600 to-gray-400" },
-        { name: "Python", level: 80, color: "from-yellow-500 to-yellow-400" },
-        { name: "REST APIs", level: 85, color: "from-blue-500 to-indigo-500" },
-        { name: "C++", level: 75, color: "from-blue-700 to-blue-500" }
-      ]
+      icon: <Server className="w-6 h-6" />,
+      skills: ["Node.js", "Express.js", "REST APIs", "JWT", "Socket.io"],
+      color: "from-green-500 to-emerald-500",
+      bgColor: "bg-gradient-to-r from-green-500/10 to-emerald-500/10",
+      borderColor: "border-green-500/20"
     },
     {
-      title: "Database",
-      skills: [
-        { name: "MongoDB", level: 85, color: "from-green-700 to-green-500" },
-        { name: "PostgreSQL", level: 80, color: "from-blue-700 to-blue-500" },
-        { name: "Mongoose", level: 82, color: "from-green-600 to-green-400" },
-        { name: "SQL", level: 78, color: "from-orange-500 to-yellow-500" },
-        { name: "Supabase", level: 75, color: "from-emerald-600 to-emerald-400" }
-      ]
+      title: "Databases",
+      icon: <Database className="w-6 h-6" />,
+      skills: ["MongoDB", "PostgreSQL", "Mongoose", "SQL"],
+      color: "from-amber-500 to-orange-500",
+      bgColor: "bg-gradient-to-r from-amber-500/10 to-orange-500/10",
+      borderColor: "border-amber-500/20"
+    },
+    {
+      title: "Tools & Platforms",
+      icon: <Terminal className="w-6 h-6" />,
+      skills: ["Git", "VS Code", "Postman", "AWS", "Docker", "Render"],
+      color: "from-cyan-500 to-blue-500",
+      bgColor: "bg-gradient-to-r from-cyan-500/10 to-blue-500/10",
+      borderColor: "border-cyan-500/20"
+    },
+    {
+      title: "Architecture",
+      icon: <Layers className="w-6 h-6" />,
+      skills: ["MVC Pattern", "Microservices", "RESTful APIs", "SOLID Principles"],
+      color: "from-rose-500 to-red-500",
+      bgColor: "bg-gradient-to-r from-rose-500/10 to-red-500/10",
+      borderColor: "border-rose-500/20"
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Skills</span>
+    <section 
+      id="skills" 
+      className="py-32 relative overflow-hidden"
+      style={{
+        background: `
+          radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+          linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)
+        `
+      }}
+    >
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Floating Geometric Shapes */}
+        <div className="absolute top-20 left-20 w-32 h-32 border border-purple-500/10 rounded-3xl rotate-45 animate-float"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 border border-cyan-500/10 rounded-full animate-float-delayed"></div>
+        <div className="absolute bottom-32 left-40 w-20 h-20 border border-pink-500/10 rounded-2xl rotate-12 animate-float-slow"></div>
+        <div className="absolute bottom-20 right-20 w-28 h-28 border border-purple-400/10 rounded-full animate-pulse"></div>
+        
+        {/* Gradient Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-cyan-600/10 to-transparent rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+        
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6 glass-effect">
+            <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+            My Toolkit
+          </div>
+          
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 text-shadow">
+            Technical{' '}
+            <span className="relative inline-block">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 animate-gradient">
+                Skills
+              </span>
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 rounded-lg blur opacity-20 animate-pulse"></div>
+            </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto mb-6"></div>
+          
+          <div className="w-32 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto mb-6 rounded-full"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Technologies and tools I work with to bring ideas to life
+            A comprehensive overview of the technologies and tools I work with to create modern web applications
           </p>
         </div>
 
+        {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-slate-800/50 rounded-2xl p-8 hover:bg-slate-800 transition-colors duration-300">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
-                {category.title}
-              </h3>
-              <div className="space-y-6">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="group">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-gray-400 text-sm">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-slate-700 rounded-full h-2">
-                      <div
-                        className={`h-2 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
+          {skillCategories.map((category, index) => (
+            <div 
+              key={index}
+              className="group relative bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover:bg-slate-800/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl card-hover glass-effect gradient-border animate-scale-in opacity-0"
+              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
+            >
+              {/* Gradient Background Effect */}
+              <div className={`absolute inset-0 bg-gradient-to-r ${category.color} rounded-3xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className={`${category.bgColor} ${category.borderColor} border rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300 animate-glow`}>
+                    <div className={`text-transparent bg-clip-text bg-gradient-to-r ${category.color}`}>
+                      {category.icon}
                     </div>
                   </div>
-                ))}
+                  <h3 className="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-colors duration-300">
+                    {category.title}
+                  </h3>
+                </div>
+                
+                <div className="flex flex-wrap gap-3">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div 
+                      key={skillIndex} 
+                      className="relative group/skill"
+                    >
+                      <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/50 via-cyan-500/50 to-pink-500/50 rounded-full blur-sm opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
+                      <span 
+                        className="relative px-4 py-2 bg-slate-700/50 text-gray-300 rounded-full text-sm border border-slate-600/30 hover:border-purple-500/30 transition-all duration-300 hover-lift flex items-center gap-2"
+                        style={{ animationDelay: `${0.1 * skillIndex}s` }}
+                      >
+                        <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-400 to-cyan-400"></span>
+                        {skill}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
+
+              {/* Floating Decoration */}
+              <div className="absolute -top-2 -right-2 w-4 h-4 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-white mb-8">Other Technologies</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-                          {[
-                "HTML", "JavaScript", "C++", "Redux Toolkit", "Git", "VS Code", "Postman", 
-                "Neon", "Webpack", "Vite", "GitHub", "Figma", "Vercel", "AWS", "Docker", "Render"
-              ].map((tech, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 bg-slate-800 text-gray-300 rounded-full hover:bg-purple-600 hover:text-white transition-colors duration-300 cursor-default"
-              >
-                {tech}
-              </span>
-            ))}
+        {/* Bottom Highlights */}
+        <div className="mt-20 grid md:grid-cols-3 gap-8 animate-slide-up opacity-0" style={{ animationDelay: '0.7s' }}>
+          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/20 rounded-2xl p-3 animate-glow">
+                <Zap className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400" />
+              </div>
+              <h4 className="text-xl font-bold text-white">Continuous Learning</h4>
+            </div>
+            <p className="text-gray-400">Always expanding my knowledge and staying updated with the latest technologies and industry best practices</p>
+          </div>
+          
+          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-2xl p-3 animate-glow">
+                <GitBranch className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400" />
+              </div>
+              <h4 className="text-xl font-bold text-white">Problem Solving</h4>
+            </div>
+            <p className="text-gray-400">Applying analytical thinking and creative solutions to overcome complex technical challenges</p>
+          </div>
+          
+          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 border border-pink-500/20 rounded-2xl p-3 animate-glow">
+                <Cpu className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400" />
+              </div>
+              <h4 className="text-xl font-bold text-white">Adaptability</h4>
+            </div>
+            <p className="text-gray-400">Quickly learning and adapting to new technologies and frameworks to meet project requirements</p>
           </div>
         </div>
       </div>
