@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { ArrowDown, Download, Github, ExternalLink, Code, Sparkles, Zap } from 'lucide-react';
+import { ArrowDown, Download, Github, ExternalLink, Code, Sparkles, Zap, FileText } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -28,6 +28,9 @@ const Hero: React.FC = () => {
       aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // You can replace this with your actual resume URL
+  const resumeUrl = "#"; // Replace with your actual resume URL
 
   return (
     <section 
@@ -175,10 +178,52 @@ const Hero: React.FC = () => {
                   View GitHub
                 </span>
               </a>
+              
+              {/* Resume Button */}
+              <a
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative px-8 py-4 border-2 border-cyan-400/50 text-cyan-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 transform hover:scale-105 hover:border-cyan-400 glass-effect"
+              >
+                <span className="flex items-center gap-2">
+                  <FileText className="w-5 h-5" />
+                  View Resume
+                </span>
+              </a>
+            </div>
+
+            {/* Resume Card */}
+            <div className="max-w-md mx-auto bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="bg-gradient-to-r from-cyan-500/10 to-cyan-500/20 border border-cyan-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
+                  <FileText className="w-6 h-6 text-cyan-400" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-white">My Resume</h3>
+                  <p className="text-gray-400 text-sm">Check out my qualifications and experience</p>
+                </div>
+              </div>
+              
+              <div className="flex justify-between items-center">
+                <div className="text-gray-300">
+                  <span className="text-cyan-400 font-semibold">Skills</span> • <span className="text-purple-400 font-semibold">Experience</span> • <span className="text-pink-400 font-semibold">Education</span>
+                </div>
+                
+                <a
+                  href={resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Download</span>
+                </a>
+              </div>
             </div>
 
             {/* Tech Stack Preview */}
-            <div className="pt-8 mb-12 animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
+            <div className="pt-8 mb-12 animate-slide-up opacity-0" style={{ animationDelay: '1.2s' }}>
               <p className="text-gray-500 text-sm mb-4">Built with modern technologies</p>
               <div className="flex flex-wrap justify-center gap-4">
                 {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Three.js'].map((tech, index) => (
