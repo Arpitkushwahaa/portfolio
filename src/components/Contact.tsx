@@ -86,8 +86,8 @@ const Contact: React.FC = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4 group">
-                  <div className="bg-gradient-to-r from-cyan-500/10 to-cyan-500/20 border border-cyan-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow">
-                    <Mail className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-300" />
+                  <div className="bg-gradient-to-r from-cyan-500/10 to-cyan-500/20 border border-cyan-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-cyan-400" />
                   </div>
                   <div>
                     <h4 className="text-gray-300 font-semibold mb-1">Email</h4>
@@ -101,8 +101,8 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start gap-4 group">
-                  <div className="bg-gradient-to-r from-purple-500/10 to-purple-500/20 border border-purple-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow">
-                    <Phone className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-300" />
+                  <div className="bg-gradient-to-r from-purple-500/10 to-purple-500/20 border border-purple-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-purple-400" />
                   </div>
                   <div>
                     <h4 className="text-gray-300 font-semibold mb-1">Phone</h4>
@@ -116,8 +116,8 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start gap-4 group">
-                  <div className="bg-gradient-to-r from-pink-500/10 to-pink-500/20 border border-pink-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow">
-                    <Linkedin className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-300" />
+                  <div className="bg-gradient-to-r from-pink-500/10 to-pink-500/20 border border-pink-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
+                    <Linkedin className="w-6 h-6 text-pink-400" />
                   </div>
                   <div>
                     <h4 className="text-gray-300 font-semibold mb-1">LinkedIn</h4>
@@ -133,8 +133,8 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="flex items-start gap-4 group">
-                  <div className="bg-gradient-to-r from-blue-500/10 to-blue-500/20 border border-blue-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow">
-                    <Github className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-300" />
+                  <div className="bg-gradient-to-r from-blue-500/10 to-blue-500/20 border border-blue-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
+                    <Github className="w-6 h-6 text-blue-400" />
                   </div>
                   <div>
                     <h4 className="text-gray-300 font-semibold mb-1">GitHub</h4>
