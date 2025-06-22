@@ -38,17 +38,17 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="relative h-10 w-10 mr-3">
+          <a href="#home" className="flex items-center group">
+            <div className="relative h-10 w-10 mr-3 transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 animate-spin-slow animate-glow"></div>
               <div className="absolute inset-0.5 rounded-full bg-slate-900 flex items-center justify-center">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-bold text-lg">AK</span>
               </div>
             </div>
-            <div className="text-white font-bold text-xl">
+            <div className="text-white font-bold text-xl transition-colors duration-300 group-hover:opacity-90">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">Arpit</span> Kushwaha
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
               <a
                 key={index}
                 href={item.href}
-                className="relative text-gray-300 hover:text-white transition-colors duration-300 group"
+                className="relative text-gray-300 hover:text-white transition-all duration-300 px-3 py-2 rounded-lg hover:bg-white/5 group"
               >
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-cyan-400 group-hover:w-full transition-all duration-300"></span>
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
               href="https://github.com/Arpitkushwahaa"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 p-2 hover:bg-purple-500/10 rounded-full"
+              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 p-2 hover:bg-purple-500/10 rounded-full transform hover:scale-110"
               aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
@@ -79,14 +79,14 @@ const Header: React.FC = () => {
               href="https://www.linkedin.com/in/arpit-kushwaha-b3a75b2a3/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 p-2 hover:bg-cyan-500/10 rounded-full"
+              className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 p-2 hover:bg-cyan-500/10 rounded-full transform hover:scale-110"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="mailto:kushwahaarpit360@gmail.com"
-              className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-2 hover:bg-pink-500/10 rounded-full"
+              className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-2 hover:bg-pink-500/10 rounded-full transform hover:scale-110"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
@@ -134,7 +134,7 @@ const Header: React.FC = () => {
                 key={index}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-xl text-gray-300 hover:text-white transition-colors duration-300 relative group"
+                className="text-xl text-gray-300 hover:text-white transition-all duration-300 relative group px-6 py-2 rounded-lg hover:bg-white/5"
               >
                 {item.name}
                 <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-cyan-400 group-hover:w-full transition-all duration-300"></span>
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               href="https://github.com/Arpitkushwahaa"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-purple-400 transition-colors duration-300 p-2 hover:bg-purple-500/10 rounded-full"
+              className="text-gray-400 hover:text-purple-400 transition-all duration-300 p-2 hover:bg-purple-500/10 rounded-full transform hover:scale-110"
               aria-label="GitHub"
             >
               <Github className="w-6 h-6" />
@@ -156,14 +156,14 @@ const Header: React.FC = () => {
               href="https://www.linkedin.com/in/arpit-kushwaha-b3a75b2a3/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 p-2 hover:bg-cyan-500/10 rounded-full"
+              className="text-gray-400 hover:text-cyan-400 transition-all duration-300 p-2 hover:bg-cyan-500/10 rounded-full transform hover:scale-110"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="mailto:kushwahaarpit360@gmail.com"
-              className="text-gray-400 hover:text-pink-400 transition-colors duration-300 p-2 hover:bg-pink-500/10 rounded-full"
+              className="text-gray-400 hover:text-pink-400 transition-all duration-300 p-2 hover:bg-pink-500/10 rounded-full transform hover:scale-110"
               aria-label="Email"
             >
               <Mail className="w-6 h-6" />

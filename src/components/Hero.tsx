@@ -29,8 +29,8 @@ const Hero: React.FC = () => {
     }
   };
 
-  // You can replace this with your actual resume URL
-  const resumeUrl = "#"; // Replace with your actual resume URL
+  // Resume URL from Google Drive
+  const resumeUrl = "https://drive.google.com/drive/folders/1ES7G5n0s5-v1al_L_wOyXR1HLT6RxVXR";
 
   return (
     <section 
