@@ -5,48 +5,86 @@ const Skills: React.FC = () => {
   const skillCategories = [
     {
       title: "Languages",
-      icon: <Code className="w-6 h-6" />,
-      skills: ["C", "C++", "Python", "JavaScript", "TypeScript", "HTML", "SQL"],
+      categoryIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      skills: [
+        { name: "C", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+        { name: "C++", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+        { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+        { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+      ],
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-gradient-to-r from-blue-500/10 to-cyan-500/10",
       borderColor: "border-blue-500/20"
     },
     {
       title: "Frontend",
-      icon: <Palette className="w-6 h-6" />,
-      skills: ["React", "Next.js", "Redux Toolkit", "Tailwind CSS", "Three.js", "Material UI"],
+      categoryIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      skills: [
+        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { name: "Redux Toolkit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+        { name: "Tailwind CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" },
+        { name: "Three.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" },
+        { name: "Material UI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" }
+      ],
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-gradient-to-r from-purple-500/10 to-pink-500/10",
       borderColor: "border-purple-500/20"
     },
     {
       title: "Backend",
-      icon: <Server className="w-6 h-6" />,
-      skills: ["Node.js", "Express.js", "REST APIs", "JWT", "Socket.io"],
+      categoryIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      skills: [
+        { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { name: "Express.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+        { name: "REST APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+        { name: "JWT", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" },
+        { name: "Socket.io", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" }
+      ],
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-gradient-to-r from-green-500/10 to-emerald-500/10",
       borderColor: "border-green-500/20"
     },
     {
       title: "Databases",
-      icon: <Database className="w-6 h-6" />,
-      skills: ["MongoDB", "PostgreSQL", "Mongoose", "SQL"],
+      categoryIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      skills: [
+        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+        { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        { name: "Mongoose", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" },
+        { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+      ],
       color: "from-amber-500 to-orange-500",
       bgColor: "bg-gradient-to-r from-amber-500/10 to-orange-500/10",
       borderColor: "border-amber-500/20"
     },
     {
       title: "Tools & Platforms",
-      icon: <Terminal className="w-6 h-6" />,
-      skills: ["Git", "VS Code", "Postman", "AWS", "Docker", "Render"],
+      categoryIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      skills: [
+        { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+        { name: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+        { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { name: "Render", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" }
+      ],
       color: "from-cyan-500 to-blue-500",
       bgColor: "bg-gradient-to-r from-cyan-500/10 to-blue-500/10",
       borderColor: "border-cyan-500/20"
     },
     {
       title: "Architecture",
-      icon: <Layers className="w-6 h-6" />,
-      skills: ["MVC Pattern", "Microservices", "RESTful APIs", "SOLID Principles"],
+      categoryIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+      skills: [
+        { name: "MVC Pattern", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+        { name: "Microservices", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+        { name: "RESTful APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+        { name: "SOLID Principles", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" }
+      ],
       color: "from-rose-500 to-red-500",
       bgColor: "bg-gradient-to-r from-rose-500/10 to-red-500/10",
       borderColor: "border-rose-500/20"
@@ -117,9 +155,11 @@ const Skills: React.FC = () => {
               <div className="relative z-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className={`${category.bgColor} ${category.borderColor} border rounded-2xl p-4 group-hover:scale-110 transition-transform duration-300 animate-glow`}>
-                    <div className={`text-transparent bg-clip-text bg-gradient-to-r ${category.color}`}>
-                      {category.icon}
-                    </div>
+                    <img 
+                      src={category.categoryIcon} 
+                      alt={category.title} 
+                      className="w-6 h-6 object-contain" 
+                    />
                   </div>
                   <h3 className="text-2xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 transition-colors duration-300">
                     {category.title}
@@ -137,8 +177,12 @@ const Skills: React.FC = () => {
                         className="relative px-4 py-2 bg-slate-700/50 text-gray-300 rounded-full text-sm border border-slate-600/30 hover:border-purple-500/30 transition-all duration-300 hover-lift flex items-center gap-2"
                         style={{ animationDelay: `${0.1 * skillIndex}s` }}
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-purple-400 to-cyan-400"></span>
-                        {skill}
+                        <img 
+                          src={skill.icon} 
+                          alt={skill.name} 
+                          className="w-4 h-4 object-contain" 
+                        />
+                        {skill.name}
                       </span>
                     </div>
                   ))}
@@ -156,7 +200,11 @@ const Skills: React.FC = () => {
           <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/20 rounded-2xl p-3 animate-glow">
-                <Zap className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400" />
+                <img 
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+                  alt="Continuous Learning" 
+                  className="w-6 h-6 object-contain" 
+                />
               </div>
               <h4 className="text-xl font-bold text-white">Continuous Learning</h4>
             </div>
@@ -166,7 +214,11 @@ const Skills: React.FC = () => {
           <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-2xl p-3 animate-glow">
-                <GitBranch className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400" />
+                <img 
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" 
+                  alt="Problem Solving" 
+                  className="w-6 h-6 object-contain" 
+                />
               </div>
               <h4 className="text-xl font-bold text-white">Problem Solving</h4>
             </div>
@@ -176,7 +228,11 @@ const Skills: React.FC = () => {
           <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 border border-pink-500/20 rounded-2xl p-3 animate-glow">
-                <Cpu className="w-6 h-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400" />
+                <img 
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" 
+                  alt="Adaptability" 
+                  className="w-6 h-6 object-contain" 
+                />
               </div>
               <h4 className="text-xl font-bold text-white">Adaptability</h4>
             </div>
