@@ -122,8 +122,12 @@ const About: React.FC = () => {
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 p-1 animate-spin-slow">
                     <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                       <div className="relative">
-                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-600 to-purple-600 flex items-center justify-center shadow-2xl">
-                          <span className="text-4xl font-bold text-white">AK</span>
+                        <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-600 to-purple-600 flex items-center justify-center shadow-2xl overflow-hidden">
+                          <img 
+                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=250&auto=format&fit=crop" 
+                            alt="Profile" 
+                            className="w-full h-full object-cover brightness-110 contrast-110"
+                          />
                         </div>
                         <div className="absolute -bottom-2 -right-2 bg-green-500 p-2 rounded-full shadow-lg">
                           <Code className="w-4 h-4 text-white" />

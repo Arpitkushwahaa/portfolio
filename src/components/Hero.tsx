@@ -69,9 +69,13 @@ const Hero: React.FC = () => {
               </div>
               
               {/* Inner Avatar */}
-              <div className="absolute inset-4 rounded-full bg-gradient-to-br from-purple-600 to-cyan-600 flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-500">
-                <div className="relative">
-                  <span className="text-5xl font-bold text-white">AK</span>
+              <div className="absolute inset-4 rounded-full bg-gradient-to-br from-purple-600 to-cyan-600 flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-500 overflow-hidden">
+                <div className="relative w-full h-full">
+                  <img 
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=250&auto=format&fit=crop" 
+                    alt="Profile" 
+                    className="w-full h-full object-cover brightness-110 contrast-110"
+                  />
                   <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
                   <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-400 rounded-full"></div>
                 </div>
