@@ -90,22 +90,25 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect">
-            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-            Get to know me
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect hover:bg-slate-800/70 hover:border-cyan-500/40 transition-all duration-300 group cursor-pointer">
+            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse group-hover:animate-ping"></div>
+            <span className="group-hover:text-cyan-200 transition-colors duration-300">Get to know me</span>
           </div>
           
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 text-shadow">
-            About{' '}
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 text-shadow group cursor-pointer">
+            <span className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-cyan-300 hover:to-cyan-500 transition-colors duration-300">About</span>{' '}
             <span className="relative inline-block">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 animate-gradient">
                 Me
               </span>
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-lg blur opacity-20 animate-pulse"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-lg blur opacity-20 animate-pulse group-hover:opacity-30"></div>
             </span>
           </h2>
           
-          <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"></div>
+          <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full mb-6 group-hover:w-64 transition-all duration-500"></div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto group-hover:text-gray-300 transition-colors duration-300">
+            Passionate about creating innovative web solutions and continuously improving my development skills
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">

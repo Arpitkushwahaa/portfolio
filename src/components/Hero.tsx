@@ -22,10 +22,10 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -140,29 +140,81 @@ const Hero: React.FC = () => {
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 py-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
-              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift">
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1">1+</div>
-                <div className="text-gray-400 text-sm">Years Learning</div>
+              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-slate-800/50">
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1 group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-300">1+</div>
+                <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Years Learning</div>
               </div>
-              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift">
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1">10+</div>
-                <div className="text-gray-400 text-sm">Projects Built</div>
+              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-slate-800/50">
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1 group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-300">10+</div>
+                <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Projects Built</div>
               </div>
-              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift">
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1">10+</div>
-                <div className="text-gray-400 text-sm">Technologies</div>
+              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-slate-800/50">
+                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1 group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-300">10+</div>
+                <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Technologies</div>
               </div>
+            </div>
+
+            {/* Section Navigation Buttons */}
+            <div className="flex flex-wrap justify-center gap-6 pb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.7s' }}>
+              <button
+                onClick={() => scrollToSection('about')}
+                className="relative group overflow-hidden px-6 py-3 rounded-xl backdrop-blur-sm border border-purple-500/30 text-white font-medium"
+              >
+                <span className="relative z-10 flex items-center gap-2 text-purple-300 group-hover:text-white transition-colors duration-300">
+                  About Me
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-purple-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-purple-400 to-purple-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute top-0 right-0 h-0.5 w-0 bg-gradient-to-r from-purple-600 to-purple-400 group-hover:w-full transition-all duration-300 delay-100"></span>
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('skills')}
+                className="relative group overflow-hidden px-6 py-3 rounded-xl backdrop-blur-sm border border-cyan-500/30 text-white font-medium"
+              >
+                <span className="relative z-10 flex items-center gap-2 text-cyan-300 group-hover:text-white transition-colors duration-300">
+                  Technical Skills
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-cyan-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-cyan-400 to-cyan-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute top-0 right-0 h-0.5 w-0 bg-gradient-to-r from-cyan-600 to-cyan-400 group-hover:w-full transition-all duration-300 delay-100"></span>
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('projects')}
+                className="relative group overflow-hidden px-6 py-3 rounded-xl backdrop-blur-sm border border-pink-500/30 text-white font-medium"
+              >
+                <span className="relative z-10 flex items-center gap-2 text-pink-300 group-hover:text-white transition-colors duration-300">
+                  My Projects
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-pink-600/20 to-pink-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-pink-400 to-pink-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute top-0 right-0 h-0.5 w-0 bg-gradient-to-r from-pink-600 to-pink-400 group-hover:w-full transition-all duration-300 delay-100"></span>
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="relative group overflow-hidden px-6 py-3 rounded-xl backdrop-blur-sm border border-amber-500/30 text-white font-medium"
+              >
+                <span className="relative z-10 flex items-center gap-2 text-amber-300 group-hover:text-white transition-colors duration-300">
+                  Let's Connect
+                </span>
+                <span className="absolute inset-0 bg-gradient-to-r from-amber-600/20 to-amber-800/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-amber-400 to-amber-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute top-0 right-0 h-0.5 w-0 bg-gradient-to-r from-amber-600 to-amber-400 group-hover:w-full transition-all duration-300 delay-100"></span>
+              </button>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up opacity-0" style={{ animationDelay: '0.8s' }}>
               <button
-                onClick={scrollToAbout}
+                onClick={() => scrollToSection('about')}
                 className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25 animate-glow"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-px bg-gradient-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-30 blur-sm transition-opacity duration-300 group-hover:animate-pulse"></div>
                 <span className="relative flex items-center gap-2">
-                  <Sparkles className="w-5 h-5" />
+                  <Sparkles className="w-5 h-5 group-hover:animate-ping-slow transition-all duration-300" />
                   Explore My Work
                 </span>
               </button>
@@ -171,12 +223,15 @@ const Hero: React.FC = () => {
                 href="https://github.com/Arpitkushwahaa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 border-2 border-purple-400/50 text-purple-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-purple-400/10 transition-all duration-300 transform hover:scale-105 hover:border-purple-400 glass-effect"
+                className="group relative px-8 py-4 border-2 border-purple-400/50 text-purple-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-purple-400/10 transition-all duration-300 transform hover:scale-105 hover:border-purple-400 glass-effect overflow-hidden"
               >
-                <span className="flex items-center gap-2">
-                  <Github className="w-5 h-5" />
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-purple-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+                  <Github className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                   View GitHub
                 </span>
+                <div className="absolute top-0 left-0 w-2 h-2 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:animate-ping"></div>
+                <div className="absolute bottom-0 right-0 w-2 h-2 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:animate-ping delay-300"></div>
               </a>
               
               {/* Resume Button */}
@@ -184,40 +239,44 @@ const Hero: React.FC = () => {
                 href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative px-8 py-4 border-2 border-cyan-400/50 text-cyan-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 transform hover:scale-105 hover:border-cyan-400 glass-effect"
+                className="group relative px-8 py-4 border-2 border-cyan-400/50 text-cyan-300 font-semibold rounded-2xl backdrop-blur-sm hover:bg-cyan-400/10 transition-all duration-300 transform hover:scale-105 hover:border-cyan-400 glass-effect overflow-hidden"
               >
-                <span className="flex items-center gap-2">
-                  <FileText className="w-5 h-5" />
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-cyan-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+                  <FileText className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                   View Resume
                 </span>
+                <div className="absolute top-0 left-0 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:animate-ping"></div>
+                <div className="absolute bottom-0 right-0 w-2 h-2 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:animate-ping delay-300"></div>
               </a>
             </div>
 
             {/* Resume Card */}
-            <div className="max-w-md mx-auto bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border animate-slide-up opacity-0" style={{ animationDelay: '1s' }}>
+            <div className="max-w-md mx-auto bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border animate-slide-up opacity-0 group hover:border-cyan-500/20 transition-all duration-300" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-gradient-to-r from-cyan-500/10 to-cyan-500/20 border border-cyan-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
-                  <FileText className="w-6 h-6 text-cyan-400" />
+                  <FileText className="w-6 h-6 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300 group-hover:rotate-6 transition-transform duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white">My Resume</h3>
-                  <p className="text-gray-400 text-sm">Check out my qualifications and experience</p>
+                  <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-300 group-hover:to-cyan-400 transition-colors duration-300">My Resume</h3>
+                  <p className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Check out my qualifications and experience</p>
                 </div>
               </div>
               
               <div className="flex justify-between items-center">
                 <div className="text-gray-300">
-                  <span className="text-cyan-400 font-semibold">Skills</span> • <span className="text-purple-400 font-semibold">Experience</span> • <span className="text-pink-400 font-semibold">Education</span>
+                  <span className="text-cyan-400 font-semibold group-hover:text-cyan-300 transition-colors duration-300">Skills</span> • <span className="text-purple-400 font-semibold group-hover:text-purple-300 transition-colors duration-300">Experience</span> • <span className="text-pink-400 font-semibold group-hover:text-pink-300 transition-colors duration-300">Education</span>
                 </div>
                 
                 <a
                   href={resumeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+                  className="flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors duration-300 relative group/download"
                 >
-                  <Download className="w-4 h-4" />
+                  <Download className="w-4 h-4 group-hover/download:animate-bounce transition-all duration-300" />
                   <span>Download</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400/50 group-hover/download:w-full transition-all duration-300"></span>
                 </a>
               </div>
             </div>
@@ -229,10 +288,11 @@ const Hero: React.FC = () => {
                 {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Three.js'].map((tech, index) => (
                   <div
                     key={tech}
-                    className="px-4 py-2 bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-full text-gray-300 text-sm hover:border-purple-500/50 hover:text-purple-300 transition-all duration-300 cursor-default hover-lift"
+                    className="relative group px-4 py-2 bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-full text-gray-300 text-sm hover:border-purple-500/50 hover:text-purple-300 transition-all duration-300 cursor-default hover-lift overflow-hidden"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    {tech}
+                    <span className="relative z-10">{tech}</span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-cyan-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                   </div>
                 ))}
               </div>
@@ -242,10 +302,11 @@ const Hero: React.FC = () => {
           {/* Scroll Indicator */}
           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
             <button
-              onClick={scrollToAbout}
-              className="p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 text-purple-300 hover:text-white hover:bg-purple-600/20 transition-all duration-300 glass-effect"
+              onClick={() => scrollToSection('about')}
+              className="p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 text-purple-300 hover:text-white hover:bg-purple-600/20 transition-all duration-300 glass-effect group hover:border-purple-500/40"
             >
-              <ArrowDown className="w-6 h-6" />
+              <ArrowDown className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
+              <span className="absolute inset-0 bg-purple-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
             </button>
           </div>
         </div>

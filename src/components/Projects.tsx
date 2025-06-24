@@ -8,8 +8,8 @@ const Projects: React.FC = () => {
       description: "A full-stack doctor appointment platform with Vonage-based video calls, enabling users to schedule, manage, and attend appointments. Features responsive UI, role-based authentication, and real-time alerts.",
       technologies: ["React 19", "Next.js 15", "Tailwind CSS", "NeonDB", "Prisma", "Clerk", "Vonage", "Shadcn UI"],
       image: "https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/doctors-appointment",
-      liveUrl: "https://doctors-appointment-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/Doctor--management-",
+      liveUrl: "https://doctor-management-ashen.vercel.app/",
       icon: <Video className="w-6 h-6" />,
       category: "Full Stack"
     },
@@ -18,8 +18,8 @@ const Projects: React.FC = () => {
       description: "An AI-driven finance dashboard to track spending, visualize data, and generate insights. Features Supabase backend, Clerk authentication, background jobs with Inngest, and enhanced security with Arcjet.",
       technologies: ["React 19", "Next.js 15", "Tailwind CSS", "Supabase", "Prisma", "Clerk", "Inngest", "Arcjet", "Shadcn UI"],
       image: "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/ai-finance-platform",
-      liveUrl: "https://ai-finance-platform-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/Ai-finance-",
+      liveUrl: "https://ai-finance-phi-brown.vercel.app",
       icon: <Activity className="w-6 h-6" />,
       category: "AI Platform"
     },
@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "Tailwind CSS", "Multer", "Shadcn UI"],
       image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
       githubUrl: "https://github.com/Arpitkushwahaa/job-portal",
-      liveUrl: "https://job-portal-demo.vercel.app",
+      liveUrl: "https://job-portal-two-psi.vercel.app/",
       icon: <Briefcase className="w-6 h-6" />,
       category: "Web App"
     },
@@ -38,8 +38,8 @@ const Projects: React.FC = () => {
       description: "A full-featured e-commerce platform with user and admin views, featuring authentication, product management, and complete order flow. Includes admin dashboard, shopping experience, and Stripe payments.",
       technologies: ["Next.js", "Tailwind CSS", "Prisma", "Clerk", "Stripe", "Shadcn UI"],
       image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/ecommerce-app",
-      liveUrl: "https://ecommerce-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/Mern-Stack-Ecommerce",
+      liveUrl: "https://mern-stack-ecommerce-five.vercel.app",
       icon: <ShoppingBag className="w-6 h-6" />,
       category: "E-Commerce"
     },
@@ -48,8 +48,8 @@ const Projects: React.FC = () => {
       description: "An AI-powered career platform with mock interviews, resume builder, and industry insights. Features Gemini AI APIs, custom onboarding, and automated weekly insights for tracking career progress.",
       technologies: ["Next.js", "Shadcn UI", "Clerk", "Prisma", "Inngest", "Gemini API"],
       image: "https://images.pexels.com/photos/8867431/pexels-photo-8867431.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/ai-career-coach",
-      liveUrl: "https://ai-career-coach-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/ai-career---coach",
+      liveUrl: "https://ai-career-coach-rust.vercel.app",
       icon: <Brain className="w-6 h-6" />,
       category: "AI Platform"
     },
@@ -58,8 +58,8 @@ const Projects: React.FC = () => {
       description: "A full-stack URL shortener platform allowing users to create, manage, and share shortened links. Features user authentication, link analytics, and custom short URLs with validation and error handling.",
       technologies: ["React", "Next.js", "MongoDB", "Express.js", "Tailwind CSS"],
       image: "https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/url-shortener",
-      liveUrl: "https://url-shortener-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/urlshortener",
+      liveUrl: "https://urlshortener-neon-mu.vercel.app",
       icon: <Link className="w-6 h-6" />,
       category: "Full Stack"
     },
@@ -68,8 +68,8 @@ const Projects: React.FC = () => {
       description: "A production-ready restaurant platform with authentication, restaurant browsing, dynamic cart & checkout system with Stripe integration, and role-based dashboards for admins and users.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "TypeScript", "Stripe", "Zustand", "Zod"],
       image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/food-delivery",
-      liveUrl: "https://food-delivery-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/Restaurant-Webapp",
+      liveUrl: "https://restaurant-webapp-phi.vercel.app/",
       icon: <Pizza className="w-6 h-6" />,
       category: "Full Stack"
     },
@@ -78,8 +78,8 @@ const Projects: React.FC = () => {
       description: "An immersive 3D experience showcasing a Coca-Cola can, built with React and Three.js. Features interactive animations, realistic rendering, and a responsive frontend-only design.",
       technologies: ["React", "Three.js", "Tailwind CSS", "Vite", "JavaScript", "HTML", "CSS"],
       image: "https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/Arpitkushwahaa/coca-cola-threejs",
-      liveUrl: "https://coca-cola-threejs-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/cocacolawebsite",
+      liveUrl: "https://cocacolawebsite.vercel.app/",
       icon: <GlassWater className="w-6 h-6" />,
       category: "3D Animation"
     },
@@ -88,8 +88,8 @@ const Projects: React.FC = () => {
       description: "A Zoom-like video conferencing platform with real-time video/audio calls, screen sharing, meeting recording, scheduled meetings, and dynamic meeting rooms with custom URLs.",
       technologies: ["Next.js 15", "TypeScript", "Clerk", "TailwindCSS", "Shadcn UI", "Stream"],
       image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/video-conferencing",
-      liveUrl: "https://video-conferencing-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/videocoferencingwebapp",
+      liveUrl: "https://webconferencing.netlify.app/",
       icon: <VideoIcon className="w-6 h-6" />,
       category: "Real-time"
     },
@@ -98,8 +98,8 @@ const Projects: React.FC = () => {
       description: "A responsive movie and trailer discovery platform with personalized watchlists, real-time data from TMDB API, and interactive UI featuring trending movies, genres, cast details, and trailers.",
       technologies: ["Next.js", "Clerk", "TailwindCSS", "Shadcn UI", "TMDB API"],
       image: "https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/cineflix",
-      liveUrl: "https://cineflix-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/moviesclub",
+      liveUrl: "https://movieclubweb.netlify.app/",
       icon: <Film className="w-6 h-6" />,
       category: "Entertainment"
     },
@@ -108,8 +108,8 @@ const Projects: React.FC = () => {
       description: "An AI-powered expense splitting platform for managing group transactions with intelligent debt settlement, real-time assistance, and automated reconciliation. Features clean data visualization and expense tracking.",
       technologies: ["React 19", "Next.js 15", "Tailwind CSS", "Convex", "Prisma", "Clerk", "Inngest", "Shadcn UI"],
       image: "https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/splitr",
-      liveUrl: "https://splitr-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/Ai-Split-Wise",
+      liveUrl: "https://ai-split-wise.vercel.app",
       icon: <Receipt className="w-6 h-6" />,
       category: "AI Platform"
     },
@@ -118,8 +118,8 @@ const Projects: React.FC = () => {
       description: "A full-featured journaling platform with secure entry management, daily prompts, mood analytics visualization, and collections. Features real-time draft saving and custom organization tools.",
       technologies: ["React.js", "Next.js 15", "Tailwind CSS", "Supabase", "Prisma", "Clerk", "Arcjet", "Shadcn UI"],
       image: "https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/ai-journal",
-      liveUrl: "https://ai-journal-demo.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/journal---app",
+      liveUrl: "https://journal-app-rouge-six.vercel.app",
       icon: <BookOpen className="w-6 h-6" />,
       category: "AI Platform"
     }
@@ -144,22 +144,23 @@ const Projects: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6">
-            <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
-            Recent Projects
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6 glass-effect hover:bg-slate-800/70 hover:border-purple-500/40 transition-all duration-300 group cursor-pointer">
+            <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse group-hover:animate-ping"></div>
+            <span className="group-hover:text-purple-200 transition-colors duration-300">Recent Projects</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 text-shadow">
-            My <span className="relative inline-block">
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 text-shadow group cursor-pointer">
+            <span className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-300 hover:to-purple-500 transition-colors duration-300">My</span>{' '}
+            <span className="relative inline-block">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 animate-gradient">
                 Projects
               </span>
-              <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 rounded-lg blur opacity-20 animate-pulse"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 via-cyan-400 to-pink-400 rounded-lg blur opacity-20 animate-pulse group-hover:opacity-30"></div>
             </span>
           </h2>
           
-          <div className="w-32 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto mb-6"></div>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <div className="w-32 h-1 bg-gradient-to-r from-purple-400 to-cyan-400 mx-auto mb-6 rounded-full group-hover:w-64 transition-all duration-500"></div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto group-hover:text-gray-300 transition-colors duration-300">
             A showcase of my recent work and personal projects that demonstrate my skills and passion for development
           </p>
         </div>
