@@ -38,8 +38,8 @@ const Projects: React.FC = () => {
       description: "A full-featured e-commerce platform with user and admin views, featuring authentication, product management, and complete order flow. Includes admin dashboard, shopping experience, and Stripe payments.",
       technologies: ["Next.js", "Tailwind CSS", "Prisma", "Clerk", "Stripe", "Shadcn UI"],
       image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/Mern-Stack-Ecommerce",
-      liveUrl: "https://mern-stack-ecommerce-five.vercel.app",
+      githubUrl: "https://github.com/Arpitkushwahaa/e-commerce-",
+      liveUrl: "https://trendy-fashion-dun.vercel.app",
       icon: <ShoppingBag className="w-6 h-6" />,
       category: "E-Commerce"
     },
