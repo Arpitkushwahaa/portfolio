@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
               <div className="absolute inset-4 rounded-full bg-gradient-to-br from-purple-600 to-cyan-600 flex items-center justify-center shadow-2xl transform hover:scale-105 transition-transform duration-500 overflow-hidden">
                 <div className="relative w-full h-full">
                   <img 
-                    src="/WhatsApp%20Image%202025-05-20%20at%2015.39.03_2ef9de44.jpg" 
+                    src="/profile.jpg" 
                     alt="Arpit Kushwaha" 
                     className="w-full h-full object-cover brightness-110 contrast-110"
                   />

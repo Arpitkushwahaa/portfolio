@@ -127,7 +127,7 @@ const About: React.FC = () => {
                       <div className="relative">
                         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-600 to-purple-600 flex items-center justify-center shadow-2xl overflow-hidden">
                           <img 
-                            src="/WhatsApp%20Image%202025-05-20%20at%2015.39.03_2ef9de44.jpg" 
+                            src="/profile.jpg" 
                             alt="Arpit Kushwaha" 
                             className="w-full h-full object-cover brightness-110 contrast-110"
                           />
