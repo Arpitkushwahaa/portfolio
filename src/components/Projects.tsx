@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
     {
       title: "Coca-Cola Three.js Animated Website",
       description: "An immersive 3D experience showcasing a Coca-Cola can, built with React and Three.js. Features interactive animations, realistic rendering, and a responsive frontend-only design.",
-      technologies: ["React", "Three.js", "Tailwind CSS", "Vite"],
+      technologies: ["React", "Three.js", "Tailwind CSS", "Vite", "JavaScript", "HTML", "CSS"],
       image: "https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       githubUrl: "https://github.com/Arpitkushwahaa/coca-cola-threejs",
       liveUrl: "https://coca-cola-threejs-demo.vercel.app",
