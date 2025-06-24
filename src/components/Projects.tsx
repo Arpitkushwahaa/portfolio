@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Code, Smartphone, Globe, Database, Video, Activity, Briefcase, ShoppingBag, Brain, Link, CalendarClock, Pizza, VideoIcon, Film, Receipt, BookOpen } from 'lucide-react';
+import { ExternalLink, Github, Code, Smartphone, Globe, Database, Video, Activity, Briefcase, ShoppingBag, Brain, Link, CalendarClock, Pizza, VideoIcon, Film, Receipt, BookOpen, GlassWater } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -74,14 +74,14 @@ const Projects: React.FC = () => {
       category: "Full Stack"
     },
     {
-      title: "Calendar Scheduling Platform",
-      description: "A Calendly-like scheduling platform with event management, time-slot configuration, third-party calendar integrations, and auto time zone detection. Built with a scalable architecture and responsive design.",
-      technologies: ["React", "Next.js", "Node.js", "TypeORM", "Supabase", "Tailwind CSS", "Shadcn UI", "Google Calendar API"],
-      image: "https://images.pexels.com/photos/1028741/pexels-photo-1028741.jpeg?auto=compress&cs=tinysrgb&w=800",
-      githubUrl: "https://github.com/Arpitkushwahaa/calendar-scheduling",
-      liveUrl: "https://calendar-scheduling-demo.vercel.app",
-      icon: <CalendarClock className="w-6 h-6" />,
-      category: "Web App"
+      title: "Coca-Cola Three.js Animated Website",
+      description: "An immersive 3D experience showcasing a Coca-Cola can, built with React and Three.js. Features interactive animations, realistic rendering, and a responsive frontend-only design.",
+      technologies: ["React", "Three.js", "Tailwind CSS", "Vite"],
+      image: "https://images.pexels.com/photos/3819969/pexels-photo-3819969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      githubUrl: "https://github.com/Arpitkushwahaa/coca-cola-threejs",
+      liveUrl: "https://coca-cola-threejs-demo.vercel.app",
+      icon: <GlassWater className="w-6 h-6" />,
+      category: "3D Animation"
     },
     {
       title: "Video Conferencing App",
