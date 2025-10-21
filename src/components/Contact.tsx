@@ -31,11 +31,11 @@ const Contact: React.FC = () => {
   return (
     <section 
       id="contact" 
-      className="py-32 relative overflow-hidden"
+      className="py-32 relative overflow-hidden bg-deep-black"
       style={{
         background: `
           radial-gradient(circle at 50% 50%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
-          linear-gradient(135deg, #0f172a 0%, #0f172a 100%)
+          linear-gradient(135deg, #000000 0%, #000000 100%)
         `
       }}
     >
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect">
             <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
             Get in Touch
           </div>
@@ -80,8 +80,8 @@ const Contact: React.FC = () => {
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Contact Info */}
-          <div className="lg:col-span-2 space-y-8 animate-slide-up opacity-0" style={{ animationDelay: '0.3s' }}>
-            <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover-lift glass-effect gradient-border">
+            <div className="lg:col-span-2 space-y-8 animate-slide-up opacity-0" style={{ animationDelay: '0.3s' }}>
+            <div className="bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-8 hover-lift glass-effect gradient-border">
               <h3 className="text-2xl font-bold text-white mb-6 text-shadow">Contact Information</h3>
               
               <div className="space-y-6">
@@ -164,8 +164,8 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-3 animate-scale-in opacity-0" style={{ animationDelay: '0.5s' }}>
-            <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover-lift glass-effect gradient-border">
+            <div className="lg:col-span-3 animate-scale-in opacity-0" style={{ animationDelay: '0.5s' }}>
+            <div className="bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-8 hover-lift glass-effect gradient-border">
               <h3 className="text-2xl font-bold text-white mb-6 text-shadow">Send Me a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -178,7 +178,7 @@ const Contact: React.FC = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full bg-slate-800/50 border border-slate-700/50 text-gray-300 rounded-xl px-5 py-4 outline-none focus:border-cyan-500/50 transition-all duration-300 peer"
+                      className="w-full bg-zinc-900/50 border border-zinc-800/50 text-gray-300 rounded-xl px-5 py-4 outline-none focus:border-cyan-500/50 transition-all duration-300 peer"
                       placeholder=" "
                     />
                     <label 
@@ -198,7 +198,7 @@ const Contact: React.FC = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full bg-slate-800/50 border border-slate-700/50 text-gray-300 rounded-xl px-5 py-4 outline-none focus:border-cyan-500/50 transition-all duration-300 peer"
+                      className="w-full bg-zinc-900/50 border border-zinc-800/50 text-gray-300 rounded-xl px-5 py-4 outline-none focus:border-cyan-500/50 transition-all duration-300 peer"
                       placeholder=" "
                     />
                     <label 
@@ -219,7 +219,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full bg-slate-800/50 border border-slate-700/50 text-gray-300 rounded-xl px-5 py-4 outline-none focus:border-cyan-500/50 transition-all duration-300 resize-none peer"
+                    className="w-full bg-zinc-900/50 border border-zinc-800/50 text-gray-300 rounded-xl px-5 py-4 outline-none focus:border-cyan-500/50 transition-all duration-300 resize-none peer"
                     placeholder=" "
                   ></textarea>
                   <label 
@@ -237,7 +237,7 @@ const Contact: React.FC = () => {
                     disabled={formStatus === 'submitting'}
                     className={`w-full px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg ${
                       formStatus === 'submitting' 
-                        ? 'bg-slate-700 text-gray-400 cursor-wait' 
+                        ? 'bg-zinc-800 text-gray-400 cursor-wait' 
                         : formStatus === 'success'
                         ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white hover:from-green-700 hover:to-emerald-700 animate-glow'
                         : formStatus === 'error'

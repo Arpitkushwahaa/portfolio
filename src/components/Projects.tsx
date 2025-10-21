@@ -126,7 +126,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-slate-800 relative overflow-hidden">
+    <section id="projects" className="py-20 bg-deep-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-32 h-32 border border-purple-500/10 rounded-3xl rotate-45 animate-float"></div>
@@ -144,7 +144,7 @@ const Projects: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6 glass-effect hover:bg-slate-800/70 hover:border-purple-500/40 transition-all duration-300 group cursor-pointer">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6 glass-effect hover:bg-zinc-900/70 hover:border-purple-500/40 transition-all duration-300 group cursor-pointer">
             <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse group-hover:animate-ping"></div>
             <span className="group-hover:text-purple-200 transition-colors duration-300">Recent Projects</span>
           </div>
@@ -169,7 +169,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-slate-900/80 backdrop-blur-sm rounded-2xl overflow-hidden card-hover animate-scale-in opacity-0 gradient-border"
+              className="group bg-zinc-900/80 backdrop-blur-sm rounded-2xl overflow-hidden card-hover animate-scale-in opacity-0 gradient-border"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
@@ -178,7 +178,7 @@ const Projects: React.FC = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/90 to-transparent"></div>
                 <div className="absolute top-4 right-4 animate-float-slow">
                   <div className="bg-gradient-to-r from-purple-600 to-cyan-600 p-2 rounded-full text-white shadow-lg shadow-purple-600/20">
                     {project.icon}
@@ -203,25 +203,25 @@ const Projects: React.FC = () => {
                   {project.technologies.slice(0, 5).map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-slate-800 text-gray-300 px-2 py-1 rounded text-xs border border-slate-700/50 hover:border-purple-500/30 transition-colors duration-300"
+                      className="bg-zinc-900 text-gray-300 px-2 py-1 rounded text-xs border border-zinc-800/50 hover:border-purple-500/30 transition-colors duration-300"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 5 && (
-                    <span className="bg-slate-800 text-gray-300 px-2 py-1 rounded text-xs border border-slate-700/50 hover:border-purple-500/30 transition-colors duration-300">
+                    <span className="bg-zinc-900 text-gray-300 px-2 py-1 rounded text-xs border border-zinc-800/50 hover:border-purple-500/30 transition-colors duration-300">
                       +{project.technologies.length - 5} more
                     </span>
                   )}
                 </div>
 
-                <div className="flex justify-between items-center pt-2 border-t border-slate-800">
+                <div className="flex justify-between items-center pt-2 border-t border-zinc-800">
                   <div className="flex space-x-3">
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-slate-800/50 rounded-full"
+                      className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-zinc-900/50 rounded-full"
                       title="View Source Code"
                     >
                       <Github className="w-5 h-5" />
@@ -230,7 +230,7 @@ const Projects: React.FC = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-slate-800/50 rounded-full"
+                      className="text-gray-400 hover:text-white transition-colors duration-300 p-2 hover:bg-zinc-900/50 rounded-full"
                       title="View Live Demo"
                     >
                       <ExternalLink className="w-5 h-5" />

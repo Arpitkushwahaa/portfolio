@@ -47,7 +47,7 @@ const Header: React.FC = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'py-3 bg-slate-900/80 backdrop-blur-xl shadow-lg shadow-slate-900/20' 
+          ? 'py-3 bg-zinc-950/80 backdrop-blur-xl shadow-lg shadow-black/30 border-b border-zinc-800' 
           : 'py-5 bg-transparent'
       }`}
     >
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
           <a href="#home" className="flex items-center group">
             <div className="relative h-10 w-10 mr-3 transition-transform duration-300 group-hover:scale-110">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 animate-spin-slow animate-glow"></div>
-              <div className="absolute inset-0.5 rounded-full bg-slate-900 flex items-center justify-center">
+              <div className="absolute inset-0.5 rounded-full bg-zinc-900 flex items-center justify-center">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 font-bold text-lg">AK</span>
               </div>
             </div>
@@ -142,7 +142,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`fixed inset-0 bg-slate-900/95 backdrop-blur-xl z-40 transition-all duration-300 transform ${
+        className={`fixed inset-0 bg-zinc-950/95 backdrop-blur-xl z-40 transition-all duration-300 transform ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } md:hidden flex flex-col`}
       >

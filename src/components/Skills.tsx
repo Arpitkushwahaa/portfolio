@@ -94,11 +94,11 @@ const Skills: React.FC = () => {
   return (
     <section 
       id="skills" 
-      className="py-32 relative overflow-hidden"
+      className="py-32 relative overflow-hidden bg-deep-black"
       style={{
         background: `
           radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-          linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)
+          linear-gradient(135deg, #000000 0%, #09090b 50%, #000000 100%)
         `
       }}
     >
@@ -120,7 +120,7 @@ const Skills: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6 glass-effect hover:bg-slate-800/70 hover:border-purple-500/40 transition-all duration-300 group cursor-pointer">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium mb-6 glass-effect hover:bg-zinc-900/70 hover:border-purple-500/40 transition-all duration-300 group cursor-pointer">
             <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse group-hover:animate-ping"></div>
             <span className="group-hover:text-purple-200 transition-colors duration-300">My Toolkit</span>
           </div>
@@ -146,7 +146,7 @@ const Skills: React.FC = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index}
-              className="group relative bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 hover:bg-slate-800/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl card-hover glass-effect gradient-border animate-scale-in opacity-0"
+              className="group relative bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-8 hover:bg-zinc-900/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl card-hover glass-effect gradient-border animate-scale-in opacity-0"
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               {/* Gradient Background Effect */}
@@ -174,7 +174,7 @@ const Skills: React.FC = () => {
                     >
                       <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/50 via-cyan-500/50 to-pink-500/50 rounded-full blur-sm opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300"></div>
                       <span 
-                        className="relative px-4 py-2 bg-slate-700/50 text-gray-300 rounded-full text-sm border border-slate-600/30 hover:border-purple-500/30 transition-all duration-300 hover-lift flex items-center gap-2"
+                        className="relative px-4 py-2 bg-zinc-900/50 text-gray-300 rounded-full text-sm border border-zinc-800/30 hover:border-purple-500/30 transition-all duration-300 hover-lift flex items-center gap-2"
                         style={{ animationDelay: `${0.1 * skillIndex}s` }}
                       >
                         <img 
@@ -197,7 +197,7 @@ const Skills: React.FC = () => {
 
         {/* Bottom Highlights */}
         <div className="mt-20 grid md:grid-cols-3 gap-8 animate-slide-up opacity-0" style={{ animationDelay: '0.7s' }}>
-          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
+          <div className="bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/20 rounded-2xl p-3 animate-glow">
                 <img 
@@ -211,7 +211,7 @@ const Skills: React.FC = () => {
             <p className="text-gray-400">Always expanding my knowledge and staying updated with the latest technologies and industry best practices</p>
           </div>
           
-          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
+          <div className="bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-2xl p-3 animate-glow">
                 <img 
@@ -225,7 +225,7 @@ const Skills: React.FC = () => {
             <p className="text-gray-400">Applying analytical thinking and creative solutions to overcome complex technical challenges</p>
           </div>
           
-          <div className="bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
+          <div className="bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-6 hover-lift glass-effect gradient-border">
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-gradient-to-r from-pink-500/10 to-rose-500/10 border border-pink-500/20 rounded-2xl p-3 animate-glow">
                 <img 

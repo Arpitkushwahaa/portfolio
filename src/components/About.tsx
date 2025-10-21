@@ -63,11 +63,11 @@ const About: React.FC = () => {
     <section 
       id="about" 
       ref={aboutRef}
-      className="py-32 relative overflow-hidden"
+      className="py-32 relative overflow-hidden bg-deep-black"
       style={{
         background: `
           radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(6, 182, 212, 0.1) 0%, transparent 50%),
-          linear-gradient(135deg, #0f172a 0%, #1e1b4b 25%, #312e81 50%, #1e1b4b 75%, #0f172a 100%)
+          linear-gradient(135deg, #000000 0%, #09090b 50%, #000000 100%)
         `
       }}
     >
@@ -90,7 +90,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20 animate-slide-up opacity-0" style={{ animationDelay: '0.1s' }}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect hover:bg-slate-800/70 hover:border-cyan-500/40 transition-all duration-300 group cursor-pointer">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-full text-cyan-300 text-sm font-medium mb-6 glass-effect hover:bg-zinc-900/70 hover:border-cyan-500/40 transition-all duration-300 group cursor-pointer">
             <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse group-hover:animate-ping"></div>
             <span className="group-hover:text-cyan-200 transition-colors duration-300">Get to know me</span>
           </div>
@@ -115,7 +115,7 @@ const About: React.FC = () => {
           {/* 3D Profile Section */}
           <div className="relative animate-scale-in opacity-0" style={{ animationDelay: '0.3s' }}>
             {/* Main Profile Card */}
-            <div className="relative bg-slate-800/30 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-500 shadow-2xl hover-lift glass-effect gradient-border">
+            <div className="relative bg-zinc-900/30 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-8 transform hover:scale-105 transition-all duration-500 shadow-2xl hover-lift glass-effect gradient-border">
               {/* Gradient Border Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-50"></div>
               
@@ -123,7 +123,7 @@ const About: React.FC = () => {
                 {/* 3D Avatar */}
                 <div className="relative mx-auto w-40 h-40 mb-8">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 p-1 animate-spin-slow animate-glow">
-                    <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
+                    <div className="w-full h-full rounded-full bg-zinc-900 flex items-center justify-center">
                       <div className="relative">
                         <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-600 to-purple-600 flex items-center justify-center shadow-2xl overflow-hidden">
                           <img 
@@ -158,7 +158,7 @@ const About: React.FC = () => {
                   {/* Achievement Stats */}
                   <div className="grid grid-cols-2 gap-4">
                     {achievements.map((achievement, index) => (
-                      <div key={index} className="bg-slate-700/30 backdrop-blur-sm rounded-2xl p-4 border border-slate-600/30 hover:border-cyan-500/30 transition-all duration-300 hover-lift glass-effect">
+                      <div key={index} className="bg-zinc-900/30 backdrop-blur-sm rounded-2xl p-4 border border-zinc-800/30 hover:border-cyan-500/30 transition-all duration-300 hover-lift glass-effect">
                         <div className="flex items-center justify-center mb-2 text-cyan-400">
                           {achievement.icon}
                         </div>
@@ -229,7 +229,7 @@ const About: React.FC = () => {
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className={`group relative bg-slate-800/30 backdrop-blur-xl border ${highlight.borderColor} rounded-3xl p-6 hover:bg-slate-800/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl card-hover glass-effect animate-scale-in opacity-0`}
+              className={`group relative bg-zinc-900/30 backdrop-blur-xl border ${highlight.borderColor} rounded-3xl p-6 hover:bg-zinc-900/50 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 shadow-xl card-hover glass-effect animate-scale-in opacity-0`}
               style={{ animationDelay: `${0.7 + index * 0.2}s` }}
             >
               {/* Gradient Background Effect */}

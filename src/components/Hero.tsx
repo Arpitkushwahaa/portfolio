@@ -36,11 +36,11 @@ const Hero: React.FC = () => {
     <section 
       id="home" 
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 pt-20"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-deep-black pt-20"
       style={{
         background: `
           radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-          linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%)
+          linear-gradient(135deg, #000000 0%, #09090b 50%, #000000 100%)
         `
       }}
     >
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
             <div className="relative mx-auto w-48 h-48 mb-8">
               {/* Outer Ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-cyan-500 to-pink-500 p-1 animate-spin-slow animate-glow">
-                <div className="w-full h-full rounded-full bg-slate-950"></div>
+                <div className="w-full h-full rounded-full bg-zinc-950"></div>
               </div>
               
               {/* Inner Avatar */}
@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
           <div className="space-y-8 pb-20">
             {/* Greeting */}
             <div className="space-y-4 animate-slide-up opacity-0" style={{ animationDelay: '0.2s' }}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium glass-effect">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-zinc-900/50 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm font-medium glass-effect">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 Available for new opportunities
               </div>
@@ -140,15 +140,15 @@ const Hero: React.FC = () => {
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 py-8 animate-slide-up opacity-0" style={{ animationDelay: '0.6s' }}>
-              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-slate-800/50">
+              <div className="text-center bg-zinc-900/30 px-6 py-4 rounded-xl border border-zinc-800/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-zinc-900/50">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1 group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-300">1+</div>
                 <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Years Learning</div>
               </div>
-              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-slate-800/50">
+              <div className="text-center bg-zinc-900/30 px-6 py-4 rounded-xl border border-zinc-800/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-zinc-900/50">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1 group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-300">10+</div>
                 <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Projects Built</div>
               </div>
-              <div className="text-center bg-slate-800/30 px-6 py-4 rounded-xl border border-slate-700/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-slate-800/50">
+              <div className="text-center bg-zinc-900/30 px-6 py-4 rounded-xl border border-zinc-800/50 hover:border-purple-500/30 transition-all duration-300 hover-lift group hover:bg-zinc-900/50">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-1 group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-300">10+</div>
                 <div className="text-gray-400 text-sm group-hover:text-gray-300 transition-colors duration-300">Technologies</div>
               </div>
@@ -252,7 +252,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Resume Card */}
-            <div className="max-w-md mx-auto bg-slate-800/40 backdrop-blur-xl border border-slate-700/50 rounded-3xl p-6 hover-lift glass-effect gradient-border animate-slide-up opacity-0 group hover:border-cyan-500/20 transition-all duration-300" style={{ animationDelay: '1s' }}>
+            <div className="max-w-md mx-auto bg-zinc-900/40 backdrop-blur-xl border border-zinc-800/50 rounded-3xl p-6 hover-lift glass-effect gradient-border animate-slide-up opacity-0 group hover:border-cyan-500/20 transition-all duration-300" style={{ animationDelay: '1s' }}>
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-gradient-to-r from-cyan-500/10 to-cyan-500/20 border border-cyan-500/30 p-3 rounded-2xl group-hover:scale-110 transition-transform duration-300 animate-glow flex items-center justify-center">
                   <FileText className="w-6 h-6 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300 group-hover:rotate-6 transition-transform duration-300" />
@@ -288,7 +288,7 @@ const Hero: React.FC = () => {
                 {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Three.js'].map((tech, index) => (
                   <div
                     key={tech}
-                    className="relative group px-4 py-2 bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-full text-gray-300 text-sm hover:border-purple-500/50 hover:text-purple-300 transition-all duration-300 cursor-default hover-lift overflow-hidden"
+                    className="relative group px-4 py-2 bg-zinc-900/30 backdrop-blur-sm border border-zinc-800/50 rounded-full text-gray-300 text-sm hover:border-purple-500/50 hover:text-purple-300 transition-all duration-300 cursor-default hover-lift overflow-hidden"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
                     <span className="relative z-10">{tech}</span>
@@ -300,10 +300,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
             <button
               onClick={() => scrollToSection('about')}
-              className="p-3 rounded-full bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 text-purple-300 hover:text-white hover:bg-purple-600/20 transition-all duration-300 glass-effect group hover:border-purple-500/40"
+              className="p-3 rounded-full bg-zinc-900/50 backdrop-blur-sm border border-purple-500/20 text-purple-300 hover:text-white hover:bg-purple-600/20 transition-all duration-300 glass-effect group hover:border-purple-500/40"
             >
               <ArrowDown className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               <span className="absolute inset-0 bg-purple-500/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></span>
